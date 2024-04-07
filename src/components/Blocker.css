@@ -1,0 +1,7 @@
+.overlay-content{
+  display: none;
+  overflow-x: hidden;
+  position: fixed;
+  z-index: 1;
+  transition: 0.5s
+}
