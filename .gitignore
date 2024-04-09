@@ -13,6 +13,8 @@ dist-ssr
 *.local
 yarn.lock
 .eslintrc.cjs
+*.cache
+.firebase
 
 # Editor directories and files
 .vscode/*

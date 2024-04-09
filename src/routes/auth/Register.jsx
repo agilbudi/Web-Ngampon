@@ -8,7 +8,7 @@ import './Register.css'
 
 export const Register = () => {
   const handleClick = () => {
-    document.getElementById("over").style.display = 'block';
+    document.getElementById("blocker").style.display = 'block';
   };
   return (
     <>

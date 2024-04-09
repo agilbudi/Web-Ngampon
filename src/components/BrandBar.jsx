@@ -4,6 +4,13 @@ import './BrandBar.css'
 
 export const BrandBar = () => {
   const [showSecondLogo, setSecondLogo] = useState(true)
+  const refresh = () =>{
+    if (window.innerWidth < 576) {
+      document.getElementById('logo2').style.display = "none"
+    }else{
+      document.getElementById('logo2').style.display = "block"
+    }
+  }
 
   useEffect(() => {
     const showLogo = () => {
@@ -26,7 +33,7 @@ export const BrandBar = () => {
           <p className='h2 m-0'>Padukuhan Ngampon</p>
           <p className='fs-6 m-0'>Kelurahan Watusigar, Kecamatan Ngawen</p>
         </Col>
-        <Col className={showSecondLogo ? 'secondLogo text-center p-0 pe-3' : 'd-none'}>
+        <Col className={showSecondLogo ? 'secondLogo text-center p-0 pe-3' : 'd-none'} onLoad={refresh} id='logo2'>
           <a href='https://gunungkidulkab.go.id/' target={'_blank'}>
             <Image src="https://firebasestorage.googleapis.com/v0/b/business-project-4040.appspot.com/o/public%2Flogo-kab-gunungkidul-text.png?alt=media&token=11768962-35cf-4334-a4da-9410ef62f429" />
           </a>

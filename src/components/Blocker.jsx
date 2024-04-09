@@ -5,7 +5,7 @@ import './Blocker.css'
 
 export const Blocker = () => {
   return (
-    <Container id='over' fluid className='m-0 p-0 py-auto overlay-content'>
+    <Container id='bloc' fluid className='m-0 p-0 overlay-content h-100'>
         <ComingSoon/>
     </Container>
   )
